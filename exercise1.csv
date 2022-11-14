@@ -1,0 +1,4 @@
+,model,Score (RMSE),Hyperparams used,Features dropped,New features created,Runtime trainining + inference (seconds),Hardware used (GPU/CPU/TPU),Explainability (top 3 features)
+0,Random forest,46.36715246,"RandomForestRegressor(n_estimators=500, random_state=42)","['datetime', 'temp', 'season']","['datetime_year', 'datetime_month', 'datetime_hour', 'datetime_dayofweek']",84.5324254,CPU,"['datetime_hour', 'pollution', 'sunlight']"
+1,decision tree,66.22250584,"DecisionTreeRegressor(max_features='auto', random_state=42)","['datetime', 'temp', 'season']","['datetime_year', 'datetime_month', 'datetime_hour', 'datetime_dayofweek']",0.301704407,CPU,"['datetime_hour', 'pollution', 'sunlight']"
+2,XGB,39.62176106,"XGBRegressor(learning_rate=0.07, max_depth=7, n_estimators=500, random_state=42)","['datetime', 'temp', 'season']","['datetime_year', 'datetime_month', 'datetime_hour', 'datetime_dayofweek']",62.41967154,CPU,"['datetime_hour', 'datetime_year', 'workingday']"
